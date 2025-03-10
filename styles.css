@@ -1,14 +1,14 @@
-/* Basic styling for the table headers */
+
 table th {
     cursor: pointer;
 }
 
-/* Styling for the container */
+
 .container {
     margin-top: 20px;
 }
 
-/* Styling the table */
+
 table {
     margin-top: 20px;
     border-collapse: collapse;
