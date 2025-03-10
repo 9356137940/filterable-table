@@ -1,16 +1,16 @@
-// Handle form submission
+
 document.getElementById('registration-form').addEventListener('submit', function (event) {
     event.preventDefault();
     addTableRow();
 });
 
-// Add new row to the table
+
 function addTableRow() {
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const age = document.getElementById('age').value;
 
-    // Prevent adding empty rows
+
     if (!name || !email || !age) {
         alert('Please fill in all fields.');
         return;
@@ -25,11 +25,11 @@ function addTableRow() {
         <td>${age}</td>
     `;
 
-    // Clear the form fields
+
     document.getElementById('registration-form').reset();
 }
 
-// Sort the table by a particular column index (0 = Name, 1 = Email, 2 = Age)
+
 function sortTable(columnIndex) {
     const table = document.getElementById('registration-table');
     const rows = Array.from(table.rows).slice(1);  // Exclude header row
@@ -42,11 +42,11 @@ function sortTable(columnIndex) {
         return 0;
     });
 
-    // Reattach sorted rows
+  
     table.tBodies[0].append(...sortedRows);
 }
 
-// Filter the table rows by name input
+
 document.getElementById('search-name').addEventListener('input', function () {
     const filterValue = this.value.toLowerCase();
     const rows = document.querySelectorAll('#table-body tr');
