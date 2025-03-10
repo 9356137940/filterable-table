@@ -1,0 +1,28 @@
+/* Basic styling for the table headers */
+table th {
+    cursor: pointer;
+}
+
+/* Styling for the container */
+.container {
+    margin-top: 20px;
+}
+
+/* Styling the table */
+table {
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
